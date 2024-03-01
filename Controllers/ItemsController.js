@@ -5,12 +5,12 @@ function validateForm(req, res, next) {
       res.status(400).json({ message: "Invalid Inputs" });
     else next();
   };
-  
+
 //create a Router to ref in app.js
 const items = express.Router();
 
 //return the data as json from model using controller
-let itemsArray = require("./models/item.model.js");//../models? throws error//
+const itemsArray = require("../models/item.model.js");//../models? throws error//
 
 //create GET route to return json data to client
 items.get("/", (req, res) => {
