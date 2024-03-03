@@ -11,7 +11,7 @@ module.exports =
     {
         id: 2,
         name: "Rent",
-        amount: 1200,
+        amount: -1200,
         date: "02/05/2024",
         from: "Landlord",
         category: "Housing"
@@ -19,7 +19,7 @@ module.exports =
     {
         id: 3,
         name: "Groceries",
-        amount: 200,
+        amount: -200,
         date: "02/10/2024",
         from: "Grocery Store",
         category: "Food"
@@ -35,7 +35,7 @@ module.exports =
     {
         id: 5,
         name: "Phone Bill",
-        amount: 50,
+        amount: -50,
         date: "02/20/2024",
         from: "Telecom Company",
         category: "Utilities"
@@ -43,7 +43,7 @@ module.exports =
     {
         id: 6,
         name: "Dinner Out",
-        amount: 80,
+        amount: -80,
         date: "02/25/2024",
         from: "Restaurant",
         category: "Dining"
