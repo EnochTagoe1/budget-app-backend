@@ -12,10 +12,10 @@ const items = express.Router();
 //return the data as json from model using controller
 const itemsArray = require("../models/item.model.js");//../models? throws error//
 
-//create GET route to return json data to client
+//create GET route to return the json data to client
 items.get("/", (req, res) => {
     res.json({ items: itemsArray })
-});
+});//creates routes for fetches
 
 
 //get a single item
