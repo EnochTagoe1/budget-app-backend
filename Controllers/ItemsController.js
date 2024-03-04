@@ -1,7 +1,7 @@
 const express = require("express");
 
 function validateForm(req, res, next) {
-    if (!req.body.name || !req.body.category || !req.body.url)
+    if (!req.body.name || !req.body.category || !req.body.amount || !req.body.date || !req.body.from)
       res.status(400).json({ message: "Invalid Inputs" });
     else next();
   };
@@ -22,7 +22,7 @@ items.get("/", (req, res) => {
 items.get("/:id", (req, res) => {
     const { id } = req.params;
   
-    const item = itemssArray.find((item) => item.id === +id);
+    const item = itemsArray.find((item) => item.id === +id);
   
     res.json({ item });
   });
