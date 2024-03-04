@@ -10,7 +10,7 @@ function validateForm(req, res, next) {
 const items = express.Router();
 
 //return the data as json from model using controller
-const itemsArray = require("../models/item.model.js");//../models? throws error//
+let itemsArray = require("../models/item.model.js");//../models? throws error//
 
 //create GET route to return the json data to client
 items.get("/", (req, res) => {
@@ -24,7 +24,7 @@ items.get("/:id", (req, res) => {
   
     const item = itemsArray.find((item) => item.id === +id);
   
-    res.json({ item });
+    res.json({ item:item });
   });
   
   items.post("/", validateForm, (req, res) => {
