@@ -1,5 +1,3 @@
-Instructions for installing budgtr app:
 
-
-
- Link to your frontend GitHub repository:
+ **Link to your frontend GitHub repository:**
+ ``https://github.com/EnochTagoe1/budget-app-frontend`
